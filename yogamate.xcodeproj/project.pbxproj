@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD114BE42B71017C009CE531 /* yogamateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BE32B71017C009CE531 /* yogamateApp.swift */; };
+		DD114BE62B71017C009CE531 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BE52B71017C009CE531 /* ContentView.swift */; };
+		DD114BE82B71017C009CE531 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BE72B71017C009CE531 /* Item.swift */; };
+		DD114BEA2B71017F009CE531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD114BE92B71017F009CE531 /* Assets.xcassets */; };
+		DD114BEE2B71017F009CE531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD114BED2B71017F009CE531 /* Preview Assets.xcassets */; };
+		DD114BF82B710180009CE531 /* yogamateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BF72B710180009CE531 /* yogamateTests.swift */; };
+		DD114C022B710180009CE531 /* yogamateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114C012B710180009CE531 /* yogamateUITests.swift */; };
+		DD114C042B710180009CE531 /* yogamateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114C032B710180009CE531 /* yogamateUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD114BF42B710180009CE531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD114BD82B71017C009CE531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD114BDF2B71017C009CE531;
+			remoteInfo = yogamate;
+		};
+		DD114BFE2B710180009CE531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD114BD82B71017C009CE531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD114BDF2B71017C009CE531;
+			remoteInfo = yogamate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD114BE02B71017C009CE531 /* yogamate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yogamate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD114BE32B71017C009CE531 /* yogamateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogamateApp.swift; sourceTree = "<group>"; };
+		DD114BE52B71017C009CE531 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD114BE72B71017C009CE531 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DD114BE92B71017F009CE531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD114BEB2B71017F009CE531 /* yogamate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = yogamate.entitlements; sourceTree = "<group>"; };
+		DD114BED2B71017F009CE531 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD114BF32B710180009CE531 /* yogamateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yogamateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD114BF72B710180009CE531 /* yogamateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogamateTests.swift; sourceTree = "<group>"; };
+		DD114BFD2B710180009CE531 /* yogamateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yogamateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD114C012B710180009CE531 /* yogamateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogamateUITests.swift; sourceTree = "<group>"; };
+		DD114C032B710180009CE531 /* yogamateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogamateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD114BDD2B71017C009CE531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD114BF02B710180009CE531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD114BFA2B710180009CE531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD114BD72B71017C009CE531 = {
+			isa = PBXGroup;
+			children = (
+				DD114BE22B71017C009CE531 /* yogamate */,
+				DD114BF62B710180009CE531 /* yogamateTests */,
+				DD114C002B710180009CE531 /* yogamateUITests */,
+				DD114BE12B71017C009CE531 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD114BE12B71017C009CE531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD114BE02B71017C009CE531 /* yogamate.app */,
+				DD114BF32B710180009CE531 /* yogamateTests.xctest */,
+				DD114BFD2B710180009CE531 /* yogamateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD114BE22B71017C009CE531 /* yogamate */ = {
+			isa = PBXGroup;
+			children = (
+				DD114BE32B71017C009CE531 /* yogamateApp.swift */,
+				DD114BE52B71017C009CE531 /* ContentView.swift */,
+				DD114BE72B71017C009CE531 /* Item.swift */,
+				DD114BE92B71017F009CE531 /* Assets.xcassets */,
+				DD114BEB2B71017F009CE531 /* yogamate.entitlements */,
+				DD114BEC2B71017F009CE531 /* Preview Content */,
+			);
+			path = yogamate;
+			sourceTree = "<group>";
+		};
+		DD114BEC2B71017F009CE531 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD114BED2B71017F009CE531 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD114BF62B710180009CE531 /* yogamateTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD114BF72B710180009CE531 /* yogamateTests.swift */,
+			);
+			path = yogamateTests;
+			sourceTree = "<group>";
+		};
+		DD114C002B710180009CE531 /* yogamateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD114C012B710180009CE531 /* yogamateUITests.swift */,
+				DD114C032B710180009CE531 /* yogamateUITestsLaunchTests.swift */,
+			);
+			path = yogamateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD114BDF2B71017C009CE531 /* yogamate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD114C072B710180009CE531 /* Build configuration list for PBXNativeTarget "yogamate" */;
+			buildPhases = (
+				DD114BDC2B71017C009CE531 /* Sources */,
+				DD114BDD2B71017C009CE531 /* Frameworks */,
+				DD114BDE2B71017C009CE531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yogamate;
+			productName = yogamate;
+			productReference = DD114BE02B71017C009CE531 /* yogamate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD114BF22B710180009CE531 /* yogamateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD114C0A2B710180009CE531 /* Build configuration list for PBXNativeTarget "yogamateTests" */;
+			buildPhases = (
+				DD114BEF2B710180009CE531 /* Sources */,
+				DD114BF02B710180009CE531 /* Frameworks */,
+				DD114BF12B710180009CE531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD114BF52B710180009CE531 /* PBXTargetDependency */,
+			);
+			name = yogamateTests;
+			productName = yogamateTests;
+			productReference = DD114BF32B710180009CE531 /* yogamateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD114BFC2B710180009CE531 /* yogamateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD114C0D2B710180009CE531 /* Build configuration list for PBXNativeTarget "yogamateUITests" */;
+			buildPhases = (
+				DD114BF92B710180009CE531 /* Sources */,
+				DD114BFA2B710180009CE531 /* Frameworks */,
+				DD114BFB2B710180009CE531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD114BFF2B710180009CE531 /* PBXTargetDependency */,
+			);
+			name = yogamateUITests;
+			productName = yogamateUITests;
+			productReference = DD114BFD2B710180009CE531 /* yogamateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD114BD82B71017C009CE531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DD114BDF2B71017C009CE531 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					DD114BF22B710180009CE531 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DD114BDF2B71017C009CE531;
+					};
+					DD114BFC2B710180009CE531 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DD114BDF2B71017C009CE531;
+					};
+				};
+			};
+			buildConfigurationList = DD114BDB2B71017C009CE531 /* Build configuration list for PBXProject "yogamate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD114BD72B71017C009CE531;
+			productRefGroup = DD114BE12B71017C009CE531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD114BDF2B71017C009CE531 /* yogamate */,
+				DD114BF22B710180009CE531 /* yogamateTests */,
+				DD114BFC2B710180009CE531 /* yogamateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD114BDE2B71017C009CE531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD114BEE2B71017F009CE531 /* Preview Assets.xcassets in Resources */,
+				DD114BEA2B71017F009CE531 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD114BF12B710180009CE531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD114BFB2B710180009CE531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD114BDC2B71017C009CE531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD114BE62B71017C009CE531 /* ContentView.swift in Sources */,
+				DD114BE82B71017C009CE531 /* Item.swift in Sources */,
+				DD114BE42B71017C009CE531 /* yogamateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD114BEF2B710180009CE531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD114BF82B710180009CE531 /* yogamateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD114BF92B710180009CE531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD114C042B710180009CE531 /* yogamateUITestsLaunchTests.swift in Sources */,
+				DD114C022B710180009CE531 /* yogamateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD114BF52B710180009CE531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD114BDF2B71017C009CE531 /* yogamate */;
+			targetProxy = DD114BF42B710180009CE531 /* PBXContainerItemProxy */;
+		};
+		DD114BFF2B710180009CE531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD114BDF2B71017C009CE531 /* yogamate */;
+			targetProxy = DD114BFE2B710180009CE531 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD114C052B710180009CE531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD114C062B710180009CE531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DD114C082B710180009CE531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = yogamate/yogamate.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"yogamate/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.yogamate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD114C092B710180009CE531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = yogamate/yogamate.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"yogamate/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.yogamate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD114C0B2B710180009CE531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.yogamateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yogamate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/yogamate";
+			};
+			name = Debug;
+		};
+		DD114C0C2B710180009CE531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.yogamateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yogamate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/yogamate";
+			};
+			name = Release;
+		};
+		DD114C0E2B710180009CE531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.yogamateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yogamate;
+			};
+			name = Debug;
+		};
+		DD114C0F2B710180009CE531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DHQU43U3E;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notmoniapps.yogamateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yogamate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD114BDB2B71017C009CE531 /* Build configuration list for PBXProject "yogamate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD114C052B710180009CE531 /* Debug */,
+				DD114C062B710180009CE531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD114C072B710180009CE531 /* Build configuration list for PBXNativeTarget "yogamate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD114C082B710180009CE531 /* Debug */,
+				DD114C092B710180009CE531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD114C0A2B710180009CE531 /* Build configuration list for PBXNativeTarget "yogamateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD114C0B2B710180009CE531 /* Debug */,
+				DD114C0C2B710180009CE531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD114C0D2B710180009CE531 /* Build configuration list for PBXNativeTarget "yogamateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD114C0E2B710180009CE531 /* Debug */,
+				DD114C0F2B710180009CE531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD114BD82B71017C009CE531 /* Project object */;
+}
