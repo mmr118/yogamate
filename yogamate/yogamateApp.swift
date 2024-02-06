@@ -11,10 +11,12 @@ import SwiftData
 
 @main
 struct yogamateApp: App {
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
         ])
+
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {
@@ -29,5 +31,6 @@ struct yogamateApp: App {
             ContentView()
         }
         .modelContainer(sharedModelContainer)
+
     }
 }
