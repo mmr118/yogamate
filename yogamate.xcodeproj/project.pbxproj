@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DD0009B12B72C2C80088BB72 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0009B02B72C2C80088BB72 /* ItemList.swift */; };
+		DD0009B32B72C59D0088BB72 /* TimerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0009B22B72C59D0088BB72 /* TimerContent.swift */; };
 		DD114BE42B71017C009CE531 /* yogamateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BE32B71017C009CE531 /* yogamateApp.swift */; };
 		DD114BE62B71017C009CE531 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BE52B71017C009CE531 /* ContentView.swift */; };
 		DD114BE82B71017C009CE531 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BE72B71017C009CE531 /* Item.swift */; };
@@ -16,7 +17,7 @@
 		DD114BF82B710180009CE531 /* yogamateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BF72B710180009CE531 /* yogamateTests.swift */; };
 		DD114C022B710180009CE531 /* yogamateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114C012B710180009CE531 /* yogamateUITests.swift */; };
 		DD114C042B710180009CE531 /* yogamateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114C032B710180009CE531 /* yogamateUITestsLaunchTests.swift */; };
-		DD114C112B7101C2009CE531 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114C102B7101C2009CE531 /* Stopwatch.swift */; };
+		DD114C112B7101C2009CE531 /* StopwatchContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114C102B7101C2009CE531 /* StopwatchContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		DD0009B02B72C2C80088BB72 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+		DD0009B22B72C59D0088BB72 /* TimerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerContent.swift; sourceTree = "<group>"; };
 		DD114BE02B71017C009CE531 /* yogamate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yogamate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD114BE32B71017C009CE531 /* yogamateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogamateApp.swift; sourceTree = "<group>"; };
 		DD114BE52B71017C009CE531 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		DD114BFD2B710180009CE531 /* yogamateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yogamateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD114C012B710180009CE531 /* yogamateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogamateUITests.swift; sourceTree = "<group>"; };
 		DD114C032B710180009CE531 /* yogamateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogamateUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DD114C102B7101C2009CE531 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		DD114C102B7101C2009CE531 /* StopwatchContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,8 @@
 			children = (
 				DD114BE32B71017C009CE531 /* yogamateApp.swift */,
 				DD114BE52B71017C009CE531 /* ContentView.swift */,
-				DD114C102B7101C2009CE531 /* Stopwatch.swift */,
+				DD0009B22B72C59D0088BB72 /* TimerContent.swift */,
+				DD114C102B7101C2009CE531 /* StopwatchContent.swift */,
 				DD0009B02B72C2C80088BB72 /* ItemList.swift */,
 				DD114BE72B71017C009CE531 /* Item.swift */,
 				DD114BE92B71017F009CE531 /* Assets.xcassets */,
@@ -268,9 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD114C112B7101C2009CE531 /* Stopwatch.swift in Sources */,
+				DD114C112B7101C2009CE531 /* StopwatchContent.swift in Sources */,
 				DD0009B12B72C2C80088BB72 /* ItemList.swift in Sources */,
 				DD114BE62B71017C009CE531 /* ContentView.swift in Sources */,
+				DD0009B32B72C59D0088BB72 /* TimerContent.swift in Sources */,
 				DD114BE82B71017C009CE531 /* Item.swift in Sources */,
 				DD114BE42B71017C009CE531 /* yogamateApp.swift in Sources */,
 			);

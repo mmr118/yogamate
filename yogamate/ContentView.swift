@@ -17,9 +17,14 @@ struct ContentView: View {
 
         TabView {
             
-            Stopwatch()
+            StopwatchContent()
                 .tabItem {
                     Image(systemName: "stopwatch")
+                }
+
+            TimerContent()
+                .tabItem {
+                    Image(systemName: "timer")
                 }
 
             ItemList()

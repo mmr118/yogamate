@@ -1,5 +1,5 @@
 //
-//  Stopwatch.swift
+//  StopwatchContent.swift
 //  yogamate
 //
 //  Created by Monica Rondón on 2/5/24.
@@ -10,7 +10,7 @@ import SwiftUI
 
 // https://www.youtube.com/watch?v=YSqaTv1mdWA
 
-struct Stopwatch: View {
+struct StopwatchContent: View {
 
     @State var isTimerRunning = false
     @State var timeCount = 0.0
@@ -75,5 +75,5 @@ struct Stopwatch: View {
 }
 
 #Preview {
-    Stopwatch()
+    StopwatchContent()
 }
