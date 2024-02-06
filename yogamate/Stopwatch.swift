@@ -24,25 +24,50 @@ struct Stopwatch: View {
                 .bold()
                 .frame(width: 220, height: 220)
                 .background(Circle().fill(Color.white).shadow(radius: 10))
+                .onReceive(timer) { time in
+                    if isTimerRunning {
+                        timeCount += 0.1
+                    }
+                }
 
             HStack(spacing: 25) {
 
-                buttonImage(name: "gobackward.60")
-                buttonImage(name: "play.circle.fill")
-                buttonImage(name: "pause.circle.fill")
-                buttonImage(name: "goforward.60")
+                // back 60s
+                controlButton("gobackward.60") {
+                    timeCount -= 1 // 60s
+                }
 
+                // play
+                controlButton("play.circle.fill") {
+                    timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+                    isTimerRunning = true
+                }
+
+                // pause
+                controlButton("pause.circle.fill") {
+                    timer.upstream.connect().cancel()
+                    isTimerRunning = false
+                }
+
+                // forward 60s
+                controlButton("goforward.60") {
+                    timeCount += 1 // 60s
+                }
 
             }
 
         }
     }
 
-    @ViewBuilder private func buttonImage(name: String) -> some View {
-        Image(systemName: name)
-            .resizable()
-            .scaledToFit()
-            .frame(width: 40, height: 40)
+    @ViewBuilder private func controlButton(_ imageName: String, action: @escaping () -> Void) -> some View {
+        Button {
+            action()
+        } label: {
+            Image(systemName: imageName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 40, height: 40)
+        }
 
     }
 
