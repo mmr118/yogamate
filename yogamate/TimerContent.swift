@@ -10,24 +10,31 @@ import SwiftUI
 
 struct TimerContent: View {
 
-    @State var hourCount = 0
-    @State var minuteCount = 0
-    @State var secondCount = 0
+    @State var hourValue = 0
+    @State var minuteValue = 0
+    @State var secondVslue = 0
+
+    @State var 
 
     var body: some View {
 
         VStack {
 
-            LabeledContent("HR", value: hourCount, format: .number)
-            LabeledContent("MIN", value: minuteCount, format: .number)
-            LabeledContent("SEC", value: secondCount, format: .number)
-
             HStack {
-                valuePicker("hr", count: $hourCount, max: 24)
-                valuePicker("min", count: $minuteCount, max: 59)
-                valuePicker("sec", count: $secondCount, max: 59)
+                valuePicker("hr", count: $hourValue, max: 24)
+                valuePicker("min", count: $minuteValue, max: 59)
+                valuePicker("sec", count: $secondVslue, max: 59)
+            }
+
+            LabeledContent("HR", value: hourValue, format: .number)
+            LabeledContent("MIN", value: minuteValue, format: .number)
+            LabeledContent("SEC", value: secondVslue, format: .number)
+
+            Button("Start") {
 
             }
+            .buttonStyle(.borderedProminent)
+
 
         }
         .padding()
