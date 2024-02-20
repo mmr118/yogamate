@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97D66E252B7A78540097ABA9 /* Durtation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D66E242B7A78540097ABA9 /* Durtation+Extensions.swift */; };
+		97E9D7DA2B84FAB0008A33B5 /* DurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9D7D92B84FAB0008A33B5 /* DurationPicker.swift */; };
 		DD0009B12B72C2C80088BB72 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0009B02B72C2C80088BB72 /* ItemList.swift */; };
 		DD0009B32B72C59D0088BB72 /* TimerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0009B22B72C59D0088BB72 /* TimerContent.swift */; };
 		DD114BE42B71017C009CE531 /* yogamateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BE32B71017C009CE531 /* yogamateApp.swift */; };
 		DD114BE62B71017C009CE531 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BE52B71017C009CE531 /* ContentView.swift */; };
-		DD114BE82B71017C009CE531 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BE72B71017C009CE531 /* Item.swift */; };
+		DD114BE82B71017C009CE531 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BE72B71017C009CE531 /* Countdown.swift */; };
 		DD114BEA2B71017F009CE531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD114BE92B71017F009CE531 /* Assets.xcassets */; };
 		DD114BEE2B71017F009CE531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD114BED2B71017F009CE531 /* Preview Assets.xcassets */; };
 		DD114BF82B710180009CE531 /* yogamateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114BF72B710180009CE531 /* yogamateTests.swift */; };
@@ -38,12 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97D66E242B7A78540097ABA9 /* Durtation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Durtation+Extensions.swift"; sourceTree = "<group>"; };
+		97E9D7D92B84FAB0008A33B5 /* DurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPicker.swift; sourceTree = "<group>"; };
 		DD0009B02B72C2C80088BB72 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
 		DD0009B22B72C59D0088BB72 /* TimerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerContent.swift; sourceTree = "<group>"; };
 		DD114BE02B71017C009CE531 /* yogamate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yogamate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD114BE32B71017C009CE531 /* yogamateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogamateApp.swift; sourceTree = "<group>"; };
 		DD114BE52B71017C009CE531 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DD114BE72B71017C009CE531 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DD114BE72B71017C009CE531 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 		DD114BE92B71017F009CE531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD114BEB2B71017F009CE531 /* yogamate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = yogamate.entitlements; sourceTree = "<group>"; };
 		DD114BED2B71017F009CE531 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -80,6 +84,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97D66E212B7A78000097ABA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD114BE52B71017C009CE531 /* ContentView.swift */,
+				DD0009B22B72C59D0088BB72 /* TimerContent.swift */,
+				DD114C102B7101C2009CE531 /* StopwatchContent.swift */,
+				DD0009B02B72C2C80088BB72 /* ItemList.swift */,
+				97E9D7D92B84FAB0008A33B5 /* DurationPicker.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		97D66E222B7A78140097ABA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD114BE72B71017C009CE531 /* Countdown.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		97D66E232B7A78290097ABA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97D66E242B7A78540097ABA9 /* Durtation+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		DD114BD72B71017C009CE531 = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				DD114BE32B71017C009CE531 /* yogamateApp.swift */,
-				DD114BE52B71017C009CE531 /* ContentView.swift */,
-				DD0009B22B72C59D0088BB72 /* TimerContent.swift */,
-				DD114C102B7101C2009CE531 /* StopwatchContent.swift */,
-				DD0009B02B72C2C80088BB72 /* ItemList.swift */,
-				DD114BE72B71017C009CE531 /* Item.swift */,
+				97D66E232B7A78290097ABA9 /* Extensions */,
+				97D66E222B7A78140097ABA9 /* Models */,
+				97D66E212B7A78000097ABA9 /* Views */,
 				DD114BE92B71017F009CE531 /* Assets.xcassets */,
 				DD114BEB2B71017F009CE531 /* yogamate.entitlements */,
 				DD114BEC2B71017F009CE531 /* Preview Content */,
@@ -274,8 +304,10 @@
 				DD114C112B7101C2009CE531 /* StopwatchContent.swift in Sources */,
 				DD0009B12B72C2C80088BB72 /* ItemList.swift in Sources */,
 				DD114BE62B71017C009CE531 /* ContentView.swift in Sources */,
+				97E9D7DA2B84FAB0008A33B5 /* DurationPicker.swift in Sources */,
 				DD0009B32B72C59D0088BB72 /* TimerContent.swift in Sources */,
-				DD114BE82B71017C009CE531 /* Item.swift in Sources */,
+				97D66E252B7A78540097ABA9 /* Durtation+Extensions.swift in Sources */,
+				DD114BE82B71017C009CE531 /* Countdown.swift in Sources */,
 				DD114BE42B71017C009CE531 /* yogamateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

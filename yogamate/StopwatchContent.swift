@@ -13,20 +13,20 @@ import SwiftUI
 struct StopwatchContent: View {
 
     @State var isTimerRunning = false
-    @State var timeCount = 0.0
+    @State var timeValue = 0.0
     @State var timer  = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
 
     var body: some View {
         VStack {
 
-            Text(String(format: "%.1f", self.timeCount) + "s")
+            Text(String(format: "%.1f", self.timeValue) + "s")
                 .font(.system(size: 60))
                 .bold()
                 .frame(width: 220, height: 220)
                 .background(Circle().fill(Color.white).shadow(radius: 10))
                 .onReceive(timer) { time in
                     if isTimerRunning {
-                        timeCount += 0.1
+                        timeValue += 0.1
                     }
                 }
 
@@ -34,7 +34,7 @@ struct StopwatchContent: View {
 
                 // back 60s
                 controlButton("gobackward.60") {
-                    timeCount -= 1 // 60s
+                    timeValue -= 1 // 60s
                 }
 
                 // play
@@ -51,7 +51,7 @@ struct StopwatchContent: View {
 
                 // forward 60s
                 controlButton("goforward.60") {
-                    timeCount += 1 // 60s
+                    timeValue += 1 // 60s
                 }
 
             }

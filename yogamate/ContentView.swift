@@ -41,5 +41,5 @@ struct ContentView: View {
 // MARK: - Previews
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: Countdown.self, inMemory: true)
 }

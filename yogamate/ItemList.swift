@@ -12,7 +12,7 @@ import SwiftData
 struct ItemList: View {
     
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @Query private var items: [Countdown]
 
     var body: some View {
         NavigationSplitView {
@@ -36,7 +36,9 @@ struct ItemList: View {
                 }
 #endif
                 ToolbarItem {
-                    Button(action: addItem) {
+                    Button {
+                        showTimerCreation.toggle()
+                    } label: {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
@@ -44,11 +46,19 @@ struct ItemList: View {
         } detail: {
             Text("Select an item")
         }
+        .popover(isPresented: $showTimerCreation) {
+
+
+
+        }
     }
+
+    @State var showTimerCreation = false
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(timestamp: Date())
+            // let newItem = Countdown(timestamp: Date())
+            let newItem = Countdown(duration: .zero)
             modelContext.insert(newItem)
         }
     }
@@ -66,6 +76,6 @@ struct ItemList: View {
 // MARK: - Previews
 #Preview {
     ItemList()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: Countdown.self, inMemory: true)
 
 }
